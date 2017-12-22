@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main</name>
+    <events>
+        <variable constant="0" name="barraRitmo" sid="515489185392890" static="0" type="number">10</variable>
+        <variable constant="0" name="musicTime" sid="496743493810164" static="0" type="number">0</variable>
+        <variable constant="0" name="pontos" sid="554920912722062" static="0" type="number">0</variable>
+        <variable constant="0" name="erro" sid="432391767030950" static="0" type="number">0</variable>
+        <variable constant="0" name="acertos" sid="322110029206065" static="0" type="number">0</variable>
+        <variable constant="0" name="numeroCombos" sid="947682228371616" static="0" type="number">0</variable>
+        <event-block sid="324428268529935">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="941768992873265" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="587449145101057" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="827378236127103" type="System">
+                    <param id="0" name="Variable">barraRitmo</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="263922963799362" type="System">
+                    <param id="0" name="Variable">acertos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="960690500203713" type="System">
+                    <param id="0" name="Variable">erro</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="827856632711577" type="System">
+                    <param id="0" name="Variable">numeroCombos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="874431968279725" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="110628366270535" type="System">
+                    <param id="0" name="Layer">&quot;Pause&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="480857243832312">
+            <conditions>
+                <condition id="0" name="On function" sid="246031894480766" type="Function">
+                    <param id="0" name="Name">&quot;set_wave&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="320070210101076">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="725361184150026" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="4" name="Set wave" sid="665523382715330" type="Gizmo">
+                            <param id="0" name="Wave">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="982037794742210">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="975370502073559" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="4" name="Set wave" sid="166001341460812" type="Gizmo">
+                            <param id="0" name="Wave">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657350373962458">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="714060300889603" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="4" name="Set wave" sid="218176689363749" type="Gizmo">
+                            <param id="0" name="Wave">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="449863709054651">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="181895037533712" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="4" name="Set wave" sid="105310100411670" type="Gizmo">
+                            <param id="0" name="Wave">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="637052736371504">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="235677409637227" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="4" name="Set wave" sid="618189082687043" type="Gizmo">
+                            <param id="0" name="Wave">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="935199368207012">
+            <conditions>
+                <condition id="0" name="On function" sid="110125505404682" type="Function">
+                    <param id="0" name="Name">&quot;set_movement&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="458206020858116">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="720123293821739" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="998571753839303" type="Gizmo">
+                            <param id="0" name="Movement">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="377239691443234">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="104581161756465" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="144010667876893" type="Gizmo">
+                            <param id="0" name="Movement">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="404104333978229">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="850151434862018" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="939581375724525" type="Gizmo">
+                            <param id="0" name="Movement">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="970290456612857">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="189897272391964" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="571765857644687" type="Gizmo">
+                            <param id="0" name="Movement">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="291670754091807">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="486380195713422" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="318238244751470" type="Gizmo">
+                            <param id="0" name="Movement">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="922410134648226">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="307298945350568" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="178328994029227" type="Gizmo">
+                            <param id="0" name="Movement">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="616148978066022">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="292843380124668" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="239850499904603" type="Gizmo">
+                            <param id="0" name="Movement">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="477227060052175">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="678811422588457" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="574690406450370" type="Gizmo">
+                            <param id="0" name="Movement">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="576453135606063">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="514712304353061" type="System">
+                            <param id="0" name="First value">Function.Param(0)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="875523422493857" type="Gizmo">
+                            <param id="0" name="Movement">8</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="679420908452238">
+            <conditions>
+                <condition id="0" name="On function" sid="327780289703056" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="1" name="Set period" sid="671263648385485" type="Gizmo">
+                    <param id="0" name="Period">Function.Param(0)</param>
+                </action>
+                <action behavior="Sine" id="2" name="Set magnitude" sid="430188577660734" type="Gizmo">
+                    <param id="0" name="Magnitude">Function.Param(1)</param>
+                </action>
+                <action behavior="Sine" id="3" name="Set movement" sid="728647586555191" type="Gizmo">
+                    <param id="0" name="Movement">0</param>
+                </action>
+                <action id="0" name="Call function" sid="906393040798096" type="Function">
+                    <param id="0" name="Name">&quot;set_wave&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(2)</param>
+                </action>
+                <action id="0" name="Call function" sid="434223350727053" type="Function">
+                    <param id="0" name="Name">&quot;set_movement&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(3)</param>
+                </action>
+                <action id="-15" name="Set visible" sid="993178726945850" type="Gizmo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="549622739204326">
+            <conditions>
+                <condition id="0" name="On function" sid="666278582132124" type="Function">
+                    <param id="0" name="Name">&quot;up_down&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="759999535386681" type="System">
+                    <param id="0" name="Object to create">title_up_down</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="895543092782485" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="194717578351660" type="Personagem">
+                    <param id="0" name="Animation">&quot;up_down&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="625782181551746">
+            <conditions>
+                <condition id="0" name="On function" sid="145645570988061" type="Function">
+                    <param id="0" name="Name">&quot;full_body&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="493610056196657" type="System">
+                    <param id="0" name="Object to create">title_full_body</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="109294720777959" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="527721339528551" type="Personagem">
+                    <param id="0" name="Animation">&quot;full_body&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="501649591810330">
+            <conditions>
+                <condition id="0" name="On function" sid="664738881246326" type="Function">
+                    <param id="0" name="Name">&quot;cross&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="602330103185379" type="System">
+                    <param id="0" name="Object to create">title_cross</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="955755028603727" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="512059966687634" type="Personagem">
+                    <param id="0" name="Animation">&quot;cross&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="130470882476534">
+            <conditions>
+                <condition id="0" name="On function" sid="584009957088612" type="Function">
+                    <param id="0" name="Name">&quot;fat_loop_line&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="309198300781452" type="System">
+                    <param id="0" name="Object to create">title_fast_line</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="361760668459704" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="945555860411185" type="Personagem">
+                    <param id="0" name="Animation">&quot;fast_line&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="250477634261276">
+            <conditions>
+                <condition id="0" name="On function" sid="124973382002292" type="Function">
+                    <param id="0" name="Name">&quot;side_to_side&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="536974311381327" type="System">
+                    <param id="0" name="Object to create">title_side_to_side</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="249340987242743" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="617815151021768" type="Personagem">
+                    <param id="0" name="Animation">&quot;side_to_side&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="764739639397068">
+            <conditions>
+                <condition id="0" name="On function" sid="721354338901788" type="Function">
+                    <param id="0" name="Name">&quot;hammer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="610212621894749" type="System">
+                    <param id="0" name="Object to create">title_hammer</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="575478194221236" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="919431879107173" type="Personagem">
+                    <param id="0" name="Animation">&quot;hammer&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="486564745842116">
+            <conditions>
+                <condition id="0" name="On function" sid="543296731672166" type="Function">
+                    <param id="0" name="Name">&quot;helicopter&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="848530941454831" type="System">
+                    <param id="0" name="Object to create">title_helicopter</param>
+                    <param id="1" name="Layer">&quot;Front&quot;</param>
+                    <param id="2" name="X">ponto_letreiro.X</param>
+                    <param id="3" name="Y">ponto_letreiro.Y</param>
+                </action>
+                <action id="0" name="Call function" sid="590199605164489" type="Function">
+                    <param id="0" name="Name">&quot;set_sine_config&quot;</param>
+                    <param id="1" name="Parameter {n}">Function.Param(0){###}Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
+                </action>
+                <action id="4" name="Set animation" sid="991938771346733" type="Personagem">
+                    <param id="0" name="Animation">&quot;helicopter&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="241225121546699">
+            <conditions>
+                <condition id="0" name="On function" sid="447586886886189" type="Function">
+                    <param id="0" name="Name">&quot;iddle&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="752413212884596" type="Personagem">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="947001415952366">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="164102783131474" type="Gizmo" />
+                <condition id="-6" name="Every X seconds" sid="753191878493852" type="System">
+                    <param id="0" name="Interval (seconds)">random(2,8)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="244038564320447" type="Gizmo">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="241331759925976" type="System">
+                    <param id="0" name="Variable">numeroCombos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="848986859033333">
+            <conditions>
+                <condition id="2" name="Key is down" sid="413555577352068" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="540910884883469" type="Gizmo">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="293887267791265" type="Gizmo">
+                    <param id="0" name="Instance variable">pressionado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="109247845959295" type="Gizmo">
+                    <param id="0" name="Instance variable">pressionado</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="373927696073543" type="System">
+                    <param id="0" name="Variable">acertos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="942452173456345" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="885278165726985">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="771774209546825" type="Gizmo">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="868433618320603" type="Gizmo">
+                    <param id="0" name="Instance variable">time</param>
+                    <param id="1" name="Value">dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455802510329636">
+            <conditions>
+                <condition id="-22" name="Else" sid="877233913274925" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="686280063825587" type="Gizmo">
+                    <param id="0" name="Instance variable">time</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="214739954125582">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="777987102445849" type="Gizmo">
+                    <param id="0" name="Instance variable">time</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">random(0.4,2)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="279068209243463" type="Gizmo">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="590516000634184">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="631810575640632" type="Gizmo">
+                            <param id="0" name="Instance variable">pressionado</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="471895414893724" type="System">
+                            <param id="0" name="Variable">erro</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="449706069817991">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="717025508775861" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="589174833793466" type="Gizmo">
+                            <param id="0" name="Instance variable">pressionado</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="675801727220227">
+            <conditions>
+                <condition id="0" name="On function" sid="673952252985552" type="Function">
+                    <param id="0" name="Name">&quot;Finalizacao&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="530071786450402" type="combo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="990199397450520" type="System">
+                    <param id="0" name="Layer">&quot;Pause&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="769504327605827" type="placar_frame">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="655000007952348" type="Points2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="600282453186634" type="Points">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="568874992653644" type="Text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="713319069446442" type="Points2">
+                    <param id="0" name="Text">(acertos*100) /numeroCombos</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="353492641593548">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="828866445062158" type="System">
+                            <param id="0" name="First value">(acertos*100) /numeroCombos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="822818288622102" type="Win_Message">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="555014679701515" type="btn_next">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="157404540717460">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="379448734501872" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="386286232109362" type="Lose_message">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="216214716267318" type="btn_retry">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="426802318779872">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="240955518311021" type="btn_next" />
+                <condition id="2" name="Key is down" sid="568233177332300" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="831853502920882" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653366599906450">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="890415463831661" type="btn_retry" />
+                <condition id="2" name="Key is down" sid="168161675377166" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="684038783690208" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Head Bang</name>
+    <description>Global Game Jam Game</description>
+    <version>1.0.0.0</version>
+    <author>Luiz Fernando Reinoso</author>
+    <author-email>luizfreinoso@gmail.com</author-email>
+    <author-website>http://cuppixel.com.br</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1p5huznzitp21</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="UserMedia" version="1">User Media</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>320</width>
+        <height>240</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">High quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Player">
+            <object-type name="Personagem" sid="127911970346880">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="167723451188743" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Image10000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Image10001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Image10002.png" />
+                    </animation>
+                    <animation framecount="5" loop="1" name="up_down" pingpong="1" repeatcount="1" repeatto="0" sid="509004535185462" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\up_and_down0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\up_and_down0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\up_and_down0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\up_and_down0003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\up_and_down0004.png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="full_body" pingpong="1" repeatcount="1" repeatto="0" sid="636930982906654" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\full_body0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\full_body0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\full_body0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\full_body0003.png" />
+                    </animation>
+                    <animation framecount="8" loop="1" name="cross" pingpong="1" repeatcount="1" repeatto="0" sid="425145316238690" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0005.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0006.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\cross0007.png" />
+                    </animation>
+                    <animation framecount="2" loop="1" name="fast_line" pingpong="1" repeatcount="1" repeatto="0" sid="663370501406886" speed="8">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\fast_loop_line0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\fast_loop_line0001.png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="side_to_side" pingpong="0" repeatcount="1" repeatto="0" sid="462909290100352" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\side_to_side0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\side_to_side0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\side_to_side0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\side_to_side0003.png" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="hammer" pingpong="1" repeatcount="1" repeatto="0" sid="507064923764340" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\hammer0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\hammer0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\hammer0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\hammer0003.png" />
+                    </animation>
+                    <animation framecount="5" loop="1" name="helicopter" pingpong="0" repeatcount="1" repeatto="0" sid="678834062667222" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\helicopter0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\helicopter0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\helicopter0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\helicopter0003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\helicopter0004.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player_title" sid="615460592089731">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="525587936023701" speed="5">
+                        <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Personagem_title.png">
+                            <collision-poly>
+                                <point x="0.17" y="0.161905" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="0.685" y="0.3" />
+                                <point x="0.705" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.245" y="0.766667" />
+                                <point x="0.12" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="letreiros">
+            <object-type name="title_up_down" sid="852674547965329">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964938314473359" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_upDown.png">
+                            <collision-poly>
+                                <point x="0.0182927" y="0.0789474" />
+                                <point x="0.5" y="0.0526316" />
+                                <point x="0.908537" y="0.394737" />
+                                <point x="0.987805" y="0.5" />
+                                <point x="0.945122" y="0.763158" />
+                                <point x="0.5" y="0.710526" />
+                                <point x="0.103659" y="0.552632" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="title_full_body" sid="149453656827900">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516411929472179" speed="5">
+                        <frame duration="1" hotspotX="0.503311" hotspotY="0.509434" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_full_body.png">
+                            <collision-poly>
+                                <point x="0.0264901" y="0.0754717" />
+                                <point x="0.496689" y="0.0566038" />
+                                <point x="0.993378" y="0.490566" />
+                                <point x="0.97351" y="0.924528" />
+                                <point x="0.496689" y="0.716981" />
+                                <point x="0.125828" y="0.641509" />
+                                <point x="0.00662252" y="0.490566" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="title_cross" sid="721782155572688">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="659700749130215" speed="5">
+                        <frame duration="1" hotspotX="0.503704" hotspotY="0.515152" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_cross.png">
+                            <collision-poly>
+                                <point x="0.0222222" y="0.0909091" />
+                                <point x="0.496296" y="0.151515" />
+                                <point x="0.888889" y="0.454545" />
+                                <point x="0.992593" y="0.484848" />
+                                <point x="0.97037" y="0.878788" />
+                                <point x="0.496296" y="0.727273" />
+                                <point x="0.0740741" y="0.69697" />
+                                <point x="0.0666667" y="0.484848" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="title_fast_line" sid="371351634212609">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848575863829396" speed="5">
+                        <frame duration="1" hotspotX="0.502994" hotspotY="0.515152" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_fast_line.png">
+                            <collision-poly>
+                                <point x="0.011976" y="0.0606061" />
+                                <point x="0.904192" y="0.484848" />
+                                <point x="0.994012" y="0.484848" />
+                                <point x="0.91018" y="0.545455" />
+                                <point x="0.101796" y="0.484848" />
+                                <point x="0.00598802" y="0.484848" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="title_side_to_side" sid="770976959274996">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734189417681550" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_side_to_side.png">
+                            <collision-poly>
+                                <point x="0.0176471" y="0.09375" />
+                                <point x="0.5" y="0.625" />
+                                <point x="0.888235" y="0.59375" />
+                                <point x="0.988235" y="0.5" />
+                                <point x="0.970588" y="0.84375" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.0235294" y="0.875" />
+                                <point x="0.0470588" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="title_hammer" sid="435198775235129">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542222201413349" speed="5">
+                        <frame duration="1" hotspotX="0.502924" hotspotY="0.517241" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_hammer.png">
+                            <collision-poly>
+                                <point x="0.00584795" y="0.0344828" />
+                                <point x="0.918129" y="0.482759" />
+                                <point x="1" y="0.482759" />
+                                <point x="0.97076" y="0.827586" />
+                                <point x="0.00584795" y="0.965517" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="title_helicopter" sid="424178267971592">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702676362748293" speed="5">
+                        <frame duration="1" hotspotX="0.503356" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Title_helicopter.png">
+                            <collision-poly>
+                                <point x="0.0134228" y="0.0454545" />
+                                <point x="0.496644" y="0.409091" />
+                                <point x="0.879195" y="0.409091" />
+                                <point x="0.966443" y="0.5" />
+                                <point x="0.872483" y="0.568182" />
+                                <point x="0.496644" y="0.659091" />
+                                <point x="0.0872483" y="0.704545" />
+                                <point x="0.0201342" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ponto_letreiro" sid="603334790350110">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714971183544529" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="UserMedia" sid="365064958041733">
+            <plugin id="UserMedia" />
+        </object-type>
+        <object-type name="Audio" sid="623711803126678">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Text" sid="283187213364949">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="palco" sid="711055315895518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802005071339611" speed="5">
+                    <frame duration="1" hotspotX="0.502058" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\palco.png">
+                        <collision-poly>
+                            <point x="0.0164609" y="0.1" />
+                            <point x="0.497942" y="0.075" />
+                            <point x="0.950617" y="0.3" />
+                            <point x="0.901235" y="0.5" />
+                            <point x="0.909465" y="0.45" />
+                            <point x="0.497942" y="0.875" />
+                            <point x="0.0823045" y="0.5" />
+                            <point x="0.0864198" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="combo" sid="213703730956866">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="354431547992132">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\combo.png" />
+        </object-type>
+        <object-type name="luz_principal" sid="807075197560250">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666698362410319" speed="5">
+                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\luz_principal.png">
+                        <collision-poly>
+                            <point x="0.321637" y="0.335366" />
+                            <point x="0.497076" y="0.0487805" />
+                            <point x="0.736842" y="0.5" />
+                            <point x="0.532164" y="0.512195" />
+                            <point x="0.497076" y="0.512195" />
+                            <point x="0.461988" y="0.518293" />
+                            <point x="0.251462" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="holofortes" sid="282511405001085">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="885131071033510" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\olofortes.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.965625" y="0.481481" />
+                            <point x="0.975" y="0.703704" />
+                            <point x="0.5" y="0.111111" />
+                            <point x="0.025" y="0.703704" />
+                            <point x="0.034375" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="luz_simples_d" sid="385709423385003">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182622421431145" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\luz_comum.png">
+                        <collision-poly>
+                            <point x="0.131148" y="0.173913" />
+                            <point x="0.491803" y="0.0869565" />
+                            <point x="0.819672" y="0.23913" />
+                            <point x="0.622951" y="0.5" />
+                            <point x="0.377049" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="luz_simples_e" sid="115899953964405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173007206461660" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\luz_comum.png">
+                        <collision-poly>
+                            <point x="0.131148" y="0.173913" />
+                            <point x="0.491803" y="0.0869565" />
+                            <point x="0.819672" y="0.23913" />
+                            <point x="0.622951" y="0.5" />
+                            <point x="0.377049" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="luz_roxa" sid="828144477607308">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="630464682295281" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50303" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\luz_roxa.png">
+                        <collision-poly>
+                            <point x="0.0483871" y="0.0545455" />
+                            <point x="0.5" y="0.175758" />
+                            <point x="0.33871" y="0.49697" />
+                            <point x="0.5" y="0.315152" />
+                            <point x="0.16129" y="0.49697" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="luz_azul" sid="195575942385977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="921048439352356" speed="5">
+                    <frame duration="1" hotspotX="0.503185" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\luz_azul.png">
+                        <collision-poly>
+                            <point x="0.496815" y="0.208861" />
+                            <point x="0.936306" y="0.0632911" />
+                            <point x="0.828025" y="0.5" />
+                            <point x="0.496815" y="0.379747" />
+                            <point x="0.617834" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarraRitmo" sid="742996927466500">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952481496203210" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\barra_ritimo.png">
+                        <collision-poly>
+                            <point x="0.107143" y="0.0612245" />
+                            <point x="0.5" y="0" />
+                            <point x="0.892857" y="0.0612245" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.75" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.303571" y="0.826531" />
+                            <point x="0.303571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarraPontos" sid="304318677422873">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263081341051646" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\barra_points.png">
+                        <collision-poly>
+                            <point x="0.0263158" y="0.0833333" />
+                            <point x="0.973684" y="0.0833333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.921053" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0789474" y="0.75" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gizmo" sid="607418080054347">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="time" sid="674150766760402" type="number" />
+                <instance-variable name="pressionado" sid="358524891941361" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="457243947432555">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510559241208772" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Gizmo_Red.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.425" />
+                            <point x="0.763158" y="0.225" />
+                            <point x="1" y="0.5" />
+                            <point x="0.763158" y="0.775" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0789474" y="0.925" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Gizmo_Green.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.425" />
+                            <point x="0.763158" y="0.225" />
+                            <point x="1" y="0.5" />
+                            <point x="0.763158" y="0.775" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0789474" y="0.925" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarraRitmoEffect" sid="590249035318651">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616581032055579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pessoas" sid="856474710882134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="502336130375912" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\pessoas0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\pessoas0001.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="203376863080785">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Keyboard" sid="410805721196178">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Points" sid="497106949696128">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="placar_frame" sid="712788776076569">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="885972415066940" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Score_table.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_retry" sid="362584450760605">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135428666838032" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\update_btn.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.928571" y="0.0625" />
+                            <point x="0.857143" y="0.5" />
+                            <point x="0.857143" y="0.875" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.0714286" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_next" sid="512915134506127">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846797501166196" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\next_btn.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.478261" y="0.0625" />
+                            <point x="0.913043" y="0.0625" />
+                            <point x="0.73913" y="0.5" />
+                            <point x="0.695652" y="0.78125" />
+                            <point x="0.478261" y="0.875" />
+                            <point x="0.0869565" y="0.9375" />
+                            <point x="0.0869565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Win_Message" sid="962722587590276">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183301923933178" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Win_message.png">
+                        <collision-poly>
+                            <point x="0.04" y="0.136364" />
+                            <point x="0.973333" y="0.0909091" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.933333" y="0.772727" />
+                            <point x="0.0666667" y="0.772727" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Points2" sid="215262754519587">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Text2" sid="315973818453751">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Lose_message" sid="558589124857174">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="107217450857444" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Lose_message.png">
+                        <collision-poly>
+                            <point x="0.0365854" y="0.125" />
+                            <point x="0.5" y="0.0833333" />
+                            <point x="0.951219" y="0.166667" />
+                            <point x="0.902439" y="0.5" />
+                            <point x="0.939024" y="0.791667" />
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.0609756" y="0.791667" />
+                            <point x="0.0609756" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MusicaTitle" sid="386942150994144">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="258265107165974">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Logo" sid="164624323033481">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="493987965853105">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725609900711357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\Game_logo.png">
+                        <collision-poly>
+                            <point x="0.0869565" y="0.210526" />
+                            <point x="0.5" y="0.824561" />
+                            <point x="0.826087" y="0.421053" />
+                            <point x="0.927536" y="0.491228" />
+                            <point x="0.978261" y="0.947368" />
+                            <point x="0.5" y="0.842105" />
+                            <point x="0.0507246" y="0.877193" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="282589796777104">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\theme\Google Drive\GAMEProjects\Headbang\CONCEPTS\particula_title.png" />
+        </object-type>
+        <object-type name="Text3" sid="104375968885794">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="GGJlogo" sid="156915041460863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="569853824680775" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\theme\OneDrive\Imagens\GGJ-round-logo.png">
+                        <collision-poly>
+                            <point x="0.146667" y="0.146667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.853333" y="0.146667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.146667" y="0.853333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Letreiros" plugin-id="Sprite" sid="186514718200018">
+            <members>
+                <member>title_cross</member>
+                <member>title_fast_line</member>
+                <member>title_full_body</member>
+                <member>title_hammer</member>
+                <member>title_helicopter</member>
+                <member>title_side_to_side</member>
+                <member>title_up_down</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine" sid="759567259835107">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="727464031871949">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Tutorial.xml</layout>
+        <layout>Musica1.xml</layout>
+        <layout>Musica2.xml</layout>
+        <layout>Musica3.xml</layout>
+        <layout>Musica4.xml</layout>
+        <layout>Credits.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Credits.xml</event-sheet>
+        <event-sheet>Main.xml</event-sheet>
+        <event-sheet>Musica1.xml</event-sheet>
+        <event-sheet>Splash Screen.xml</event-sheet>
+        <event-sheet>Musica2.xml</event-sheet>
+        <event-sheet>Musica3.xml</event-sheet>
+        <event-sheet>Musica4.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Audio" uid="0">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="24" />
+        <global-instance type="Keyboard" uid="25" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Botao_head banger.ogg" />
+        <file name="Inicio head banger.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="tape1.ogg" />
+        <file name="tape2.ogg" />
+        <file name="tape3.ogg" />
+        <file name="tape4.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

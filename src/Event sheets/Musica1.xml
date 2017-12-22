@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Musica1</name>
+    <events>
+        <variable constant="0" name="maxRitmoMusica1" sid="359429194982468" static="0" type="number">0</variable>
+        <variable constant="0" name="maxPontosMusica1" sid="889210057789963" static="0" type="number">0</variable>
+        <include>Main</include>
+        <event-block sid="897458659519827">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="608696440767195" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="929147207305802" type="Audio">
+                    <param id="0" name="Folder">1</param>
+                    <param id="1" name="Audio file name">&quot;tape1&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;tape1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="180432839406122">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="913260202239257" type="System" />
+                <condition id="-14" name="Compare variable" sid="181042460758440" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">209</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="805832749942618" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Value">dt</param>
+                </action>
+                <action disabled="1" id="0" name="Set text" sid="852703890488296" type="Text">
+                    <param id="0" name="Text">musicTime</param>
+                </action>
+                <action id="-6" name="Set height" sid="988518382733254" type="BarraRitmoEffect">
+                    <param id="0" name="Height">(75/100) * barraRitmo</param>
+                </action>
+                <action id="0" name="Set text" sid="698048863756677" type="Text">
+                    <param id="0" name="Text">&quot;COMBOS: &quot;&amp;numeroCombos&amp;&quot; - ACERTOS: &quot;&amp;acertos&amp;&quot; - ERROS: &quot;&amp;erro&amp;&quot;\n GIZMO STATUS: &quot;&amp;Gizmo.pressionado</param>
+                </action>
+                <action id="0" name="Set text" sid="532126052611598" type="Points">
+                    <param id="0" name="Text">pontos</param>
+                </action>
+                <action id="0" name="Set text" sid="398600410082051" type="MusicaTitle">
+                    <param id="0" name="Text">&quot;Music: Roland Garros&quot;&amp;newline&amp;&quot;Artist: Zoliborz&quot;&amp;newline&amp;&quot;License: Public Domain&quot;&amp;newline&amp;&quot;freemusicarchive.org/music/Zoliborz/&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="227639969195107">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="116044927996964" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">14</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="840762696278603" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">56</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="507017797719126" type="Gizmo" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="893034882393602" type="Function">
+                    <param id="0" name="Name">&quot;up_down&quot;</param>
+                    <param id="1" name="Parameter {n}">1{###}50{###}1{###}1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="570570374287711">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="184000145502727" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">56</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="393586013886561" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">70</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="831658015765507" type="Gizmo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="836348677779688">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="526508794620645" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">70</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="405281864639896" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">96</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="934369969958699" type="Gizmo" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="874957997681587" type="System">
+                    <param id="0" name="Variable">barraRitmo</param>
+                    <param id="1" name="Value">(30/numeroCombos)*acertos</param>
+                </action>
+                <action id="0" name="Call function" sid="887319182968067" type="Function">
+                    <param id="0" name="Name">&quot;full_body&quot;</param>
+                    <param id="1" name="Parameter {n}">1{###}50{###}1{###}2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="471965986501919">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="660739945853526" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">96</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="669609201548573" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">126</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="931379176412524" type="Gizmo" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="368542748083386" type="System">
+                    <param id="0" name="Variable">barraRitmo</param>
+                    <param id="1" name="Value">(30/numeroCombos)*acertos</param>
+                </action>
+                <action id="0" name="Call function" sid="841166939662829" type="Function">
+                    <param id="0" name="Name">&quot;fat_loop_line&quot;</param>
+                    <param id="1" name="Parameter {n}">2{###}50{###}1{###}1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="595760398754183">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="334424696614109" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">126</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="160196231821772" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">180</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="527189737363705" type="Gizmo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="378512570111498">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="757850478803901" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">180</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="620829068862360" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">205</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Is visible" sid="901590345941666" type="Gizmo" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="448201731273985" type="System">
+                    <param id="0" name="Variable">barraRitmo</param>
+                    <param id="1" name="Value">(30/numeroCombos)*acertos</param>
+                </action>
+                <action id="0" name="Call function" sid="165298399181376" type="Function">
+                    <param id="0" name="Name">&quot;cross&quot;</param>
+                    <param id="1" name="Parameter {n}">1{###}75{###}1{###}1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="787198122476327">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="949071127204913" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">205</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="348827283506877" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">209</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="598926269802589" type="Gizmo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="822037209629912">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="146814891088251" type="System">
+                    <param id="0" name="Variable">musicTime</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">209</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action disabled="1" id="0" name="Set text" sid="173553121725384" type="Text">
+                    <param id="0" name="Text">&quot;FIM&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="398742954792522" type="System">
+                    <param id="0" name="Variable">maxPontosMusica1</param>
+                    <param id="1" name="Value">pontos</param>
+                </action>
+                <action id="-9" name="Set value" sid="763187463314341" type="System">
+                    <param id="0" name="Variable">maxRitmoMusica1</param>
+                    <param id="1" name="Value">(acertos*100)/numeroCombos</param>
+                </action>
+                <action id="0" name="Call function" sid="116375643670352" type="Function">
+                    <param id="0" name="Name">&quot;iddle&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="512902463904571" type="Function">
+                    <param id="0" name="Name">&quot;Finalizacao&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

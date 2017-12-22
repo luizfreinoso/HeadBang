@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Musica1</layout>
+        <layout active="1" order="6">Credits</layout>
+        <layout order="7">Menu</layout>
+        <event-sheet order="2">Credits</event-sheet>
+        <event-sheet order="3">Main</event-sheet>
+        <event-sheet order="4">Musica1</event-sheet>
+        <event-sheet order="5">Musica2</event-sheet>
+        <event-sheet order="8">Musica3</event-sheet>
+        <event-sheet order="9">Musica4</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="Letreiros" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Player/" />
+        <folder expanded="0" path="object-folder/letreiros/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Personagem/" />
+        <folder expanded="1" path="animation-folder/Player_title/" />
+        <folder expanded="1" path="animation-folder/title_up_down/" />
+        <folder expanded="1" path="animation-folder/title_full_body/" />
+        <folder expanded="1" path="animation-folder/title_cross/" />
+        <folder expanded="1" path="animation-folder/title_fast_line/" />
+        <folder expanded="1" path="animation-folder/title_side_to_side/" />
+        <folder expanded="1" path="animation-folder/title_hammer/" />
+        <folder expanded="1" path="animation-folder/title_helicopter/" />
+        <folder expanded="1" path="animation-folder/ponto_letreiro/" />
+        <folder expanded="1" path="animation-folder/palco/" />
+        <folder expanded="1" path="animation-folder/luz_principal/" />
+        <folder expanded="1" path="animation-folder/holofortes/" />
+        <folder expanded="1" path="animation-folder/luz_simples_d/" />
+        <folder expanded="1" path="animation-folder/luz_simples_e/" />
+        <folder expanded="1" path="animation-folder/luz_roxa/" />
+        <folder expanded="1" path="animation-folder/luz_azul/" />
+        <folder expanded="1" path="animation-folder/BarraRitmo/" />
+        <folder expanded="1" path="animation-folder/BarraPontos/" />
+        <folder expanded="1" path="animation-folder/Gizmo/" />
+        <folder expanded="1" path="animation-folder/BarraRitmoEffect/" />
+        <folder expanded="1" path="animation-folder/Pessoas/" />
+        <folder expanded="1" path="animation-folder/placar_frame/" />
+        <folder expanded="1" path="animation-folder/btn_retry/" />
+        <folder expanded="1" path="animation-folder/btn_next/" />
+        <folder expanded="1" path="animation-folder/Win_Message/" />
+        <folder expanded="1" path="animation-folder/Lose_message/" />
+        <folder expanded="1" path="animation-folder/Logo/" />
+        <folder expanded="1" path="animation-folder/GGJlogo/" />
+    </folders-expanded>
+</c2uistate>
