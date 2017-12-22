@@ -28,7 +28,7 @@ MS Windows, Mac OS X, Linux / Unix, Web standard (HTML5, Java, JavaScript, Flash
 * The project is build in Construct 2. - Pixel Art made in Gimp 2.6 and Graphics Gale.
 
 **Installation Instructions:** 
-Select in the "Release folder" a executable for your system.
+Select in the "Release folder" in [Global game jam link](https://globalgamejam.org/2017/games/headbang). Exists a executable for your system.
 
 **Credits:**
 HeadBang is a game created by:
